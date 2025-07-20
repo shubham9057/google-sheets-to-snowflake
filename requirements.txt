@@ -1,0 +1,6 @@
+gspread
+pandas
+snowflake-connector-python
+oauth2client
+pyyaml
+python-dotenv

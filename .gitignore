@@ -1,0 +1,6 @@
+# Ignore credentials and environment files
+credentials/
+*.pyc
+__pycache__/
+.env
+.DS_Store

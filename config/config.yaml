@@ -1,0 +1,11 @@
+google_sheet:
+  sheet_id: "1iNVm9a9RSU7IC51TFfezxg_kuQQ-feCkYfDYMgdVPV4"
+  worksheet_name: "Cert_Status"
+
+snowflake:
+  account: "MOFBRGT-DQ54961"
+  warehouse: "DASH_WH_S"
+  database: "DASH_DB"
+  schema: "PUBLIC"
+  role: "ACCOUNTADMIN"
+  table_name: "DE_CERT_STATUS"
