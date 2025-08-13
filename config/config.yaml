@@ -1,11 +1,10 @@
 google_sheet:
-  sheet_id: "1iNVm9a9RSU7IC51TFfezxg_kuQQ-feCkYfDYMgdVPV4"
+  sheet_id: "1NYaPZ9phjmigWajB9YPPFtN8yxn371Ux--HjcSMS8M0"
   worksheet_name: "Cert_Status"
 
 snowflake:
-  account: "MOFBRGT-DQ54961"
-  warehouse: "DASH_WH_S"
-  database: "DASH_DB"
-  schema: "PUBLIC"
-  role: "ACCOUNTADMIN"
+  warehouse: "LAB_S_WH"
+  database: "SSINGHAL"
+  schema: "POC"
+  role: "PYTHON_SERVICE_PRD"
   table_name: "DE_CERT_STATUS"

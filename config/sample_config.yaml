@@ -1,0 +1,10 @@
+google_sheet:
+  sheet_id: "<your_sheet_id_here>"                    # Replace <your_sheet_id_here> with the actual sheet ID
+  worksheet_name: "<your_worksheet_name_here>"        # Replace <your_worksheet_name_here> with the actual worksheet name
+
+snowflake:
+  warehouse: "<your_warehouse_here>"                  # Replace <your_warehouse_here> with the actual warehouse
+  database: "<your_database_here>"                    # Replace <your_database_here> with the actual database
+  schema: "<your_schema_here>"                        # Replace <your_schema_here> with the actual schema
+  role: "<your_role_here>"                            # Replace <your_role_here> with the actual role
+  table_name: "<your_table_name_here>"                # Replace <your_table_name_here> with the actual table name

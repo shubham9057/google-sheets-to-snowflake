@@ -32,13 +32,15 @@ df = pd.DataFrame(records)
 # Snowflake connection
 sf = config["snowflake"]
 conn = snowflake.connector.connect(
-    user=sf["user"],
-    password=sf["password"],
-    account=sf["account"],
-    warehouse=sf["warehouse"],
-    database=sf["database"],
-    schema=sf["schema"],
-    role=sf["role"]
+    account = sf["account"],
+    user = sf["user"],
+    authenticator = 'SNOWFLAKE_JWT',
+    private_key_file = sf["private_key_file"],
+    private_key_file_pwd = sf["private_key_file_pwd"],
+    warehouse = sf["warehouse"],
+    database = sf["database"],
+    schema = sf["schema"],
+    role = sf["role"]
 )
 
 cs = conn.cursor()
@@ -52,7 +54,7 @@ cs.execute(f'CREATE OR REPLACE TABLE {table_name} ({columns})')
 for _, row in df.iterrows():
     values = tuple(str(val) if val is not None else None for val in row)
     placeholders = ', '.join(['%s'] * len(values))
-    insert_query = f"INSERT INTO {sf["table_name"]} VALUES ({placeholders})"
+    insert_query = f"INSERT INTO {table_name} VALUES ({placeholders})"
     cs.execute(insert_query, values)
 
 cs.close()
