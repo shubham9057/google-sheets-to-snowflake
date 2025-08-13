@@ -1,5 +1,4 @@
 # Ignore credentials and environment files
-config/config.yaml
 credentials/credentials.json
 credentials/snowflake_credentials.yaml
 *.pyc

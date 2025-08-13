@@ -30,6 +30,3 @@ pip install -r requirements.txt
 Create a Windows Task:
 - Action: Start a program
 - Program: `scripts/run_sync.bat`
-
-## License
-MIT
